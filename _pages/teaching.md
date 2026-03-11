@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description: teaching, course development, and student supervision.
 nav: true
 nav_order: 3

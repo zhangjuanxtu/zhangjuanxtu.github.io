@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /honors/
-title: honors
+title: Honors
 description: selected honors, awards, and mentoring recognitions.
 nav: true
 nav_order: 4

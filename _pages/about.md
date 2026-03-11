@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='https://math.xtu.edu.cn/'>School of Mathematics and Computational Science</a>, <a href='https://en.xtu.edu.cn/'>Xiangtan University</a>
 

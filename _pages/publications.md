@@ -1,13 +1,13 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: selected publications in numerical linear algebra, control, and scientific computing.
+title: Publications
+description: complete publication list with DOI, PDF, and arXiv links where available.
 nav: true
 nav_order: 2
 ---
 
-The list below highlights representative publications selected from the public faculty profile.
+The list below compiles publications from the public faculty profile, with DOI, PDF, and arXiv links added where reliable public metadata is available.
 
 {% include bib_search.liquid %}
 
