@@ -20,8 +20,9 @@ For this account, the target repository name should be:
 2. If the remote URL changes after the rename, update the local remote:
    `git remote set-url origin https://github.com/zhangjuanxtu/zhangjuanxtu.github.io.git`
 3. In GitHub repository settings, open the Pages section.
-4. Set the publishing source to the `gh-pages` branch, because `.github/workflows/deploy.yml` publishes the built site there.
+4. Set the publishing source to `GitHub Actions`.
 5. In GitHub Actions settings, make sure workflows have permission to write repository contents.
+6. The old `gh-pages` branch is no longer the publishing source for this setup. If it still exists, it can be ignored once Pages is switched to `GitHub Actions`.
 
 ## Local Preview
 
