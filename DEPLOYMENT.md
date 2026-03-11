@@ -26,6 +26,8 @@ For this account, the target repository name should be:
 
 ## Local Preview
 
+This document assumes the repository is published through GitHub Actions for GitHub Pages.
+
 Two preview paths are available:
 
 - Ruby/Bundler: `bundle exec jekyll build` or `bundle exec jekyll serve`
