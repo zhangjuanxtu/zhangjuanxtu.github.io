@@ -5,6 +5,12 @@ title: Talks
 description: Academic Conferences and Exchanges
 nav: true
 nav_order: 5
+_styles: >
+  .list-group-item {
+    background-color: transparent !important;
+    border-color: var(--global-divider-color) !important;
+    color: var(--global-text-color) !important;
+  }
 ---
 
 Here is a list of my recent academic conferences, talks, and exchange visits.
