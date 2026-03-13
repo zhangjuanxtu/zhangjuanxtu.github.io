@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2026-03-10
-title: Website Update: A Simpler Homepage and New Talks Page
+title: "Website Update: A Simpler Homepage and New Talks Page"
 inline: true
 related_posts: false
 ---
