@@ -15,24 +15,28 @@
           {% assign news_limit = news_size %}
         {% endif %}
         {% for item in news limit: news_limit %}
+          {% assign item_title = item.title | default: '' | strip %}
+          {% assign item_content = item.content | remove: '<p>' | remove: '</p>' | strip %}
+          {% if item_title == '' and item_content == '' %}
+            {% continue %}
+          {% endif %}
           <tr>
             <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
             <td>
               {% if item.inline %}
-                {% assign inline_content = item.content | remove: '<p>' | remove: '</p>' | strip %}
                 {% if item.title and item.url %}
                   <strong><a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a></strong>
-                  {% if inline_content != '' %}
-                    : {{ inline_content | emojify }}
+                  {% if item_content != '' %}
+                    : {{ item_content | emojify }}
                   {% endif %}
                 {% elsif item.title %}
                   <strong>{{ item.title }}</strong>
-                  {% if inline_content != '' %}
-                    : {{ inline_content | emojify }}
+                  {% if item_content != '' %}
+                    : {{ item_content | emojify }}
                   {% endif %}
                 {% else %}
-                  {% if inline_content != '' %}
-                    {{ inline_content | emojify }}
+                  {% if item_content != '' %}
+                    {{ item_content | emojify }}
                   {% else %}
                     <em>Update details coming soon.</em>
                   {% endif %}
