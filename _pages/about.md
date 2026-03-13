@@ -26,19 +26,26 @@ latest_posts:
   enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
+_styles: >
+  @media (min-width: 576px) {
+    .profile {
+      width: 22%;
+    }
+  }
 ---
 
-Juan Zhang is a Professor of Mathematics and PhD supervisor at Xiangtan University, serving as Vice Dean of the School of Mathematics and Computational Science and Executive Deputy Director of the Ministry of Education Key Laboratory of Intelligent Computing and Information Processing.
+I am a Professor of Mathematics and PhD supervisor at Xiangtan University. I serve as Vice Dean of the School of Mathematics and Computational Science and Executive Deputy Director of the Ministry of Education Key Laboratory of Intelligent Computing and Information Processing.
 
-Her research focuses on numerical linear algebra, matrix computation, optimization, and AI for mathematics, with applications in large-scale scientific computing and data-driven algorithms.
+My research focuses on numerical linear algebra, matrix computation, optimization, and AI for mathematics, with applications in large-scale scientific computing and data-driven algorithms.
 
 ## Quick Navigation
 
 - [CV](/cv/) for research, education, appointments, and selected roles
 - [Publications](/publications/) for the complete publication list
 - [Talks](/talks/) for recent conferences, invited talks, and academic exchanges
+- [Activities](/activities/) for selected academic events and outreach activities
 - [Honors](/honors/) for selected awards and mentoring recognition
 
 ## Student Recruitment
 
-Applications from postdoctoral researchers, PhD students, and master's students are welcome, especially in numerical analysis, matrix computation, optimization, and AI-driven scientific computing.
+I welcome applications from postdoctoral researchers, PhD students, and master's students, especially in numerical analysis, matrix computation, optimization, and AI-driven scientific computing.
