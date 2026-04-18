@@ -28,6 +28,20 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 _styles: >
+  @media (max-width: 575.98px) {
+    .profile {
+      width: 42%;
+      max-width: 160px;
+      margin-left: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .profile .more-info {
+      font-size: 0.72rem;
+      line-height: 1.35;
+    }
+  }
+
   @media (min-width: 576px) {
     .profile {
       width: 22%;
