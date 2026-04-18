@@ -16,6 +16,10 @@ layout: default
       {% else %}
         {{ site.title }}
       {% endif %}
+
+      {% if page.visitor_counter and site.homepage_visit_counter and site.homepage_visit_counter.enabled %}
+        {% include visitor-counter.liquid %}
+      {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
   </header>
@@ -45,10 +49,6 @@ layout: default
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
-
-    {% if page.visitor_counter and site.homepage_visit_counter and site.homepage_visit_counter.enabled %}
-      {% include visitor-counter.liquid %}
-    {% endif %}
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
