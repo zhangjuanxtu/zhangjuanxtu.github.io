@@ -16,6 +16,7 @@ profile:
 
 selected_papers: false # publications are centralized on the Publications page
 social: true # includes social icons at the bottom of the page
+visitor_counter: true # displays a visible visit counter on the homepage
 
 announcements:
   enabled: true # includes a list of news items

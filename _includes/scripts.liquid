@@ -299,6 +299,21 @@
   ></script>
 {% endif %}
 
+{% if page.visitor_counter
+  and site.homepage_visit_counter
+  and site.homepage_visit_counter.enabled
+  and site.homepage_visit_counter.provider == 'busuanzi'
+%}
+  <script
+    {% if site.enable_cookie_consent %}
+      type="text/plain" data-category="analytics"
+    {% endif %}
+    async
+    defer
+    src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+  ></script>
+{% endif %}
+
 {% if site.enable_progressbar %}
   <!-- Scrolling Progress Bar -->
   <script defer src="{{ '/assets/js/progress-bar.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>

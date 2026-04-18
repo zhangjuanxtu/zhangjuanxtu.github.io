@@ -1,0 +1,17 @@
+{% assign counter_config = site.homepage_visit_counter %}
+
+<div class="mt-4 mb-4" aria-label="Homepage visit statistics">
+  <div class="alert alert-light" role="status">
+    <strong>{{ counter_config.title | default: 'Site Statistics' }}</strong>
+    <div style="display: flex; flex-wrap: wrap; gap: 0.75rem 1.25rem; margin-top: 0.5rem;">
+      <span id="busuanzi_container_site_uv" style="display: none;">
+        {{ counter_config.visitor_label | default: 'Visitors' }}
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+      <span id="busuanzi_container_page_pv" style="display: none;">
+        {{ counter_config.page_view_label | default: 'Homepage Views' }}
+        <span id="busuanzi_value_page_pv"></span>
+      </span>
+    </div>
+  </div>
+</div>

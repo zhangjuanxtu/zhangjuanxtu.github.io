@@ -46,6 +46,10 @@ layout: default
 
     <div class="clearfix">{{ content }}</div>
 
+    {% if page.visitor_counter and site.homepage_visit_counter and site.homepage_visit_counter.enabled %}
+      {% include visitor-counter.liquid %}
+    {% endif %}
+
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <h2>
