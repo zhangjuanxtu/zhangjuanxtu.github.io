@@ -4,7 +4,7 @@
   .visitor-counter-corner {
     position: fixed;
     right: 1rem;
-    bottom: 1rem;
+    bottom: calc(3.75rem + env(safe-area-inset-bottom, 0px));
     z-index: 20;
     max-width: calc(100vw - 1.5rem);
     padding: 0.45rem 0.75rem;
@@ -33,7 +33,7 @@
   @media (max-width: 576px) {
     .visitor-counter-corner {
       right: 0.5rem;
-      bottom: 0.5rem;
+      bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
       padding: 0.4rem 0.65rem;
       font-size: 0.7rem;
     }
